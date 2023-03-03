@@ -20,10 +20,11 @@ class ToDoList extends HTMLElement {
     shadow.appendChild(content);
 
     const newTaskInput = shadow.getElementById("new-task");
-    const addTaskButton = shadow.getElementById("add-task");
+    const addTaskButton = document.getElementById("add-task");
     const taskList = shadow.getElementById("task-list");
 
     addTaskButton.addEventListener("click", () => {
+      console.log("sdfsdfsdf")
       const taskText = newTaskInput.value.trim();
       if (taskText) {
         const li = document.createElement("li");
